@@ -1,0 +1,90 @@
+\doxysection{loadbalancer Class Reference}
+\hypertarget{classloadbalancer}{}\label{classloadbalancer}\index{loadbalancer@{loadbalancer}}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{classloadbalancer_afc308893c7ab0fc8b92036deae7a2de9}{get\+Time}} ()
+\begin{DoxyCompactList}\small\item\em Returns total current system time. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classloadbalancer_a8754005b28e5d0800cd7048ed9caefa0}{increment\+Time}} ()
+\begin{DoxyCompactList}\small\item\em Increments time of system. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classloadbalancer_a2c45d009dffc50f5d5d3a6c2b295311d}{add\+Request}} (\mbox{\hyperlink{structrequest}{request}} req)
+\begin{DoxyCompactList}\small\item\em Adds a request to the load balancer queue. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classloadbalancer_a157774bcf936cd8d22ae15e69bf3149a}{is\+Request\+Queue\+Empty}} ()
+\begin{DoxyCompactList}\small\item\em Returns true is queue is empty, otherwise false. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{structrequest}{request}} \mbox{\hyperlink{classloadbalancer_a3d1715e4b2218a7aa9ad74e3e4fa6167}{get\+Request}} ()
+\begin{DoxyCompactList}\small\item\em Returns a request object from the loadbalancer. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classloadbalancer_a2c45d009dffc50f5d5d3a6c2b295311d}\label{classloadbalancer_a2c45d009dffc50f5d5d3a6c2b295311d} 
+\index{loadbalancer@{loadbalancer}!addRequest@{addRequest}}
+\index{addRequest@{addRequest}!loadbalancer@{loadbalancer}}
+\doxysubsubsection{\texorpdfstring{addRequest()}{addRequest()}}
+{\footnotesize\ttfamily void loadbalancer\+::add\+Request (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structrequest}{request}}}]{req }\end{DoxyParamCaption})}
+
+
+
+Adds a request to the load balancer queue. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em req} & Request object passed in to be added \\
+\hline
+\end{DoxyParams}
+\Hypertarget{classloadbalancer_a3d1715e4b2218a7aa9ad74e3e4fa6167}\label{classloadbalancer_a3d1715e4b2218a7aa9ad74e3e4fa6167} 
+\index{loadbalancer@{loadbalancer}!getRequest@{getRequest}}
+\index{getRequest@{getRequest}!loadbalancer@{loadbalancer}}
+\doxysubsubsection{\texorpdfstring{getRequest()}{getRequest()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structrequest}{request}} loadbalancer\+::get\+Request (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Returns a request object from the loadbalancer. 
+
+\begin{DoxyReturn}{Returns}
+request 
+\end{DoxyReturn}
+\Hypertarget{classloadbalancer_afc308893c7ab0fc8b92036deae7a2de9}\label{classloadbalancer_afc308893c7ab0fc8b92036deae7a2de9} 
+\index{loadbalancer@{loadbalancer}!getTime@{getTime}}
+\index{getTime@{getTime}!loadbalancer@{loadbalancer}}
+\doxysubsubsection{\texorpdfstring{getTime()}{getTime()}}
+{\footnotesize\ttfamily int loadbalancer\+::get\+Time (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Returns total current system time. 
+
+\begin{DoxyReturn}{Returns}
+int 
+\end{DoxyReturn}
+\Hypertarget{classloadbalancer_a8754005b28e5d0800cd7048ed9caefa0}\label{classloadbalancer_a8754005b28e5d0800cd7048ed9caefa0} 
+\index{loadbalancer@{loadbalancer}!incrementTime@{incrementTime}}
+\index{incrementTime@{incrementTime}!loadbalancer@{loadbalancer}}
+\doxysubsubsection{\texorpdfstring{incrementTime()}{incrementTime()}}
+{\footnotesize\ttfamily void loadbalancer\+::increment\+Time (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Increments time of system. 
+
+\Hypertarget{classloadbalancer_a157774bcf936cd8d22ae15e69bf3149a}\label{classloadbalancer_a157774bcf936cd8d22ae15e69bf3149a} 
+\index{loadbalancer@{loadbalancer}!isRequestQueueEmpty@{isRequestQueueEmpty}}
+\index{isRequestQueueEmpty@{isRequestQueueEmpty}!loadbalancer@{loadbalancer}}
+\doxysubsubsection{\texorpdfstring{isRequestQueueEmpty()}{isRequestQueueEmpty()}}
+{\footnotesize\ttfamily bool loadbalancer\+::is\+Request\+Queue\+Empty (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Returns true is queue is empty, otherwise false. 
+
+\begin{DoxyReturn}{Returns}
+true Queue is empty 
+
+false Queue is not empty 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+/\+Users/erickordonez/\+Downloads/412-\/\+Project2/\+CSCE412-\/\+Project2/\mbox{\hyperlink{loadbalancer_8h}{loadbalancer.\+h}}\item 
+/\+Users/erickordonez/\+Downloads/412-\/\+Project2/\+CSCE412-\/\+Project2/\mbox{\hyperlink{loadbalancer_8cpp}{loadbalancer.\+cpp}}\end{DoxyCompactItemize}

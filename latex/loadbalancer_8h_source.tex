@@ -1,0 +1,35 @@
+\doxysection{loadbalancer.\+h}
+\hypertarget{loadbalancer_8h_source}{}\label{loadbalancer_8h_source}\index{/Users/erickordonez/Downloads/412-\/Project2/CSCE412-\/Project2/loadbalancer.h@{/Users/erickordonez/Downloads/412-\/Project2/CSCE412-\/Project2/loadbalancer.h}}
+\mbox{\hyperlink{loadbalancer_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ }
+\DoxyCodeLine{00011\ \textcolor{preprocessor}{\#define\ LOADBALANCER\_H}}
+\DoxyCodeLine{00012\ \textcolor{preprocessor}{\#ifndef\ REQUEST\_CPP}}
+\DoxyCodeLine{00013\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{request_8cpp}{request.cpp}}"{}}}
+\DoxyCodeLine{00014\ \textcolor{preprocessor}{\#endif}}
+\DoxyCodeLine{00015\ }
+\DoxyCodeLine{00016\ \textcolor{preprocessor}{\#include\ <queue>}}
+\DoxyCodeLine{00017\ }
+\DoxyCodeLine{00018\ \textcolor{keyword}{class\ }\mbox{\hyperlink{classloadbalancer}{loadbalancer}}\{}
+\DoxyCodeLine{00019\ }
+\DoxyCodeLine{00020\ \ \ \ \ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00021\ }
+\DoxyCodeLine{00022\ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ Default\ constructor}}
+\DoxyCodeLine{00023\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classloadbalancer}{loadbalancer}}()\{}
+\DoxyCodeLine{00024\ \ \ \ \ \ \ \ \ \ \ \ \ systemTime\ =\ 0;}
+\DoxyCodeLine{00025\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00026\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{classloadbalancer_afc308893c7ab0fc8b92036deae7a2de9}{getTime}}();}
+\DoxyCodeLine{00027\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classloadbalancer_a8754005b28e5d0800cd7048ed9caefa0}{incrementTime}}();}
+\DoxyCodeLine{00028\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classloadbalancer_a2c45d009dffc50f5d5d3a6c2b295311d}{addRequest}}(\mbox{\hyperlink{structrequest}{request}}\ req);}
+\DoxyCodeLine{00029\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{classloadbalancer_a157774bcf936cd8d22ae15e69bf3149a}{isRequestQueueEmpty}}();}
+\DoxyCodeLine{00030\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{structrequest}{request}}\ \mbox{\hyperlink{classloadbalancer_a3d1715e4b2218a7aa9ad74e3e4fa6167}{getRequest}}();}
+\DoxyCodeLine{00031\ }
+\DoxyCodeLine{00032\ \ \ \ \ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00033\ }
+\DoxyCodeLine{00034\ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ Current\ system\ time}}
+\DoxyCodeLine{00035\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{int}\ systemTime;}
+\DoxyCodeLine{00036\ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ Queue\ to\ keep\ requests}}
+\DoxyCodeLine{00037\ \ \ \ \ \ \ \ \ queue<request>\ requestQueue;}
+\DoxyCodeLine{00038\ \};}
+
+\end{DoxyCode}

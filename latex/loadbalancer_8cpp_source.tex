@@ -1,0 +1,49 @@
+\doxysection{loadbalancer.\+cpp}
+\hypertarget{loadbalancer_8cpp_source}{}\label{loadbalancer_8cpp_source}\index{/Users/erickordonez/Downloads/412-\/Project2/CSCE412-\/Project2/loadbalancer.cpp@{/Users/erickordonez/Downloads/412-\/Project2/CSCE412-\/Project2/loadbalancer.cpp}}
+\mbox{\hyperlink{loadbalancer_8cpp}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ }
+\DoxyCodeLine{00011\ \textcolor{preprocessor}{\#ifndef\ LOADBALANCER\_H}}
+\DoxyCodeLine{00012\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{loadbalancer_8h}{loadbalancer.h}}"{}}}
+\DoxyCodeLine{00013\ \textcolor{preprocessor}{\#endif}}
+\DoxyCodeLine{00014\ }
+\DoxyCodeLine{00020\ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{classloadbalancer_afc308893c7ab0fc8b92036deae7a2de9}{loadbalancer::getTime}}()\{}
+\DoxyCodeLine{00021\ \ \ \ \ \textcolor{comment}{//\ Returns\ total\ current\ system\ time}}
+\DoxyCodeLine{00022\ \ \ \ \ \textcolor{keywordflow}{return}\ systemTime;}
+\DoxyCodeLine{00023\ \}}
+\DoxyCodeLine{00024\ }
+\DoxyCodeLine{00029\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classloadbalancer_a8754005b28e5d0800cd7048ed9caefa0}{loadbalancer::incrementTime}}()\{}
+\DoxyCodeLine{00030\ \ \ \ \ \textcolor{comment}{//\ Increments\ time\ of\ system}}
+\DoxyCodeLine{00031\ \ \ \ \ this-\/>systemTime\ ++;}
+\DoxyCodeLine{00032\ \}}
+\DoxyCodeLine{00033\ }
+\DoxyCodeLine{00039\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classloadbalancer_a2c45d009dffc50f5d5d3a6c2b295311d}{loadbalancer::addRequest}}(\mbox{\hyperlink{structrequest}{request}}\ req)\{}
+\DoxyCodeLine{00040\ \ \ \ \ \textcolor{comment}{//\ Adds\ request\ to\ the\ queue}}
+\DoxyCodeLine{00041\ \ \ \ \ this-\/>requestQueue.push(req);}
+\DoxyCodeLine{00042\ \ \ \ \ this-\/>\mbox{\hyperlink{classloadbalancer_a8754005b28e5d0800cd7048ed9caefa0}{incrementTime}}();}
+\DoxyCodeLine{00043\ \}}
+\DoxyCodeLine{00044\ }
+\DoxyCodeLine{00050\ \mbox{\hyperlink{structrequest}{request}}\ \mbox{\hyperlink{classloadbalancer_a3d1715e4b2218a7aa9ad74e3e4fa6167}{loadbalancer::getRequest}}()\{}
+\DoxyCodeLine{00051\ }
+\DoxyCodeLine{00052\ \ \ \ \ \textcolor{comment}{//Checking\ to\ see\ if\ queue\ is\ empty}}
+\DoxyCodeLine{00053\ \ \ \ \ \textcolor{keywordflow}{if}\ (!requestQueue.empty())\{}
+\DoxyCodeLine{00054\ }
+\DoxyCodeLine{00055\ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ getting\ first\ element\ from\ queue}}
+\DoxyCodeLine{00056\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{structrequest}{request}}\ r\ =\ requestQueue.front();}
+\DoxyCodeLine{00057\ }
+\DoxyCodeLine{00058\ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ removing\ first\ element\ from\ the\ queue}}
+\DoxyCodeLine{00059\ \ \ \ \ \ \ \ \ requestQueue.pop();}
+\DoxyCodeLine{00060\ }
+\DoxyCodeLine{00061\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ r;}
+\DoxyCodeLine{00062\ \ \ \ \ \}}
+\DoxyCodeLine{00063\ }
+\DoxyCodeLine{00064\ \ \ \ \ this-\/>\mbox{\hyperlink{classloadbalancer_a8754005b28e5d0800cd7048ed9caefa0}{incrementTime}}();}
+\DoxyCodeLine{00065\ }
+\DoxyCodeLine{00066\ \}}
+\DoxyCodeLine{00067\ }
+\DoxyCodeLine{00074\ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{classloadbalancer_a157774bcf936cd8d22ae15e69bf3149a}{loadbalancer::isRequestQueueEmpty}}()\{}
+\DoxyCodeLine{00075\ \ \ \ \ \textcolor{comment}{//\ Checks\ to\ see\ if\ queue\ is\ empty}}
+\DoxyCodeLine{00076\ \ \ \ \ \textcolor{keywordflow}{return}\ this-\/>requestQueue.empty();}
+\DoxyCodeLine{00077\ \}}
+
+\end{DoxyCode}

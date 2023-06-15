@@ -1,0 +1,31 @@
+\doxysection{webserver.\+cpp}
+\hypertarget{webserver_8cpp_source}{}\label{webserver_8cpp_source}\index{/Users/erickordonez/Downloads/412-\/Project2/CSCE412-\/Project2/webserver.cpp@{/Users/erickordonez/Downloads/412-\/Project2/CSCE412-\/Project2/webserver.cpp}}
+\mbox{\hyperlink{webserver_8cpp}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ }
+\DoxyCodeLine{00011\ \textcolor{preprocessor}{\#ifndef\ WEBSERVER\_H}}
+\DoxyCodeLine{00012\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{webserver_8h}{webserver.h}}"{}}}
+\DoxyCodeLine{00013\ \textcolor{preprocessor}{\#endif}}
+\DoxyCodeLine{00014\ }
+\DoxyCodeLine{00021\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classwebserver_aa2a700da8b23bcb1c0498ca61fe884c6}{webserver::addRequest}}(\mbox{\hyperlink{structrequest}{request}}\ req,\ \textcolor{keywordtype}{int}\ currentTime)\{}
+\DoxyCodeLine{00022\ \ \ \ \ \textcolor{comment}{//\ This\ function\ adds\ request\ to\ server}}
+\DoxyCodeLine{00023\ \ \ \ \ this-\/>r\ =\ req;}
+\DoxyCodeLine{00024\ \ \ \ \ this-\/>requestStartTime\ =\ currentTime;}
+\DoxyCodeLine{00025\ \}}
+\DoxyCodeLine{00026\ }
+\DoxyCodeLine{00032\ \mbox{\hyperlink{structrequest}{request}}\ \mbox{\hyperlink{classwebserver_a8e97c299c64c0f9f46052a88888c7fc9}{webserver::getRequest}}()\{}
+\DoxyCodeLine{00033\ \ \ \ \ \textcolor{comment}{//\ Returns\ request\ of\ serverr}}
+\DoxyCodeLine{00034\ \ \ \ \ \textcolor{keywordflow}{return}\ this-\/>r;}
+\DoxyCodeLine{00035\ \}}
+\DoxyCodeLine{00036\ }
+\DoxyCodeLine{00042\ \textcolor{keywordtype}{string}\ \mbox{\hyperlink{classwebserver_a5b2b5e07d0c892b5a11ff76d2d6f8343}{webserver::getServerName}}()\{}
+\DoxyCodeLine{00043\ \ \ \ \ \textcolor{comment}{//\ Returns\ name\ of\ server}}
+\DoxyCodeLine{00044\ \ \ \ \ \textcolor{keywordflow}{return}\ this-\/>servername;}
+\DoxyCodeLine{00045\ \}}
+\DoxyCodeLine{00046\ }
+\DoxyCodeLine{00054\ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{classwebserver_ad070fd0d61b6a2cbbdf753b165c29437}{webserver::isRequestFinished}}(\textcolor{keywordtype}{int}\ currentTime)\{}
+\DoxyCodeLine{00055\ \ \ \ \ \textcolor{comment}{//\ Returns\ if\ request\ of\ server\ is\ finished}}
+\DoxyCodeLine{00056\ \ \ \ \ \textcolor{keywordflow}{return}\ (currentTime\ >\ (this-\/>requestStartTime\ +\ r.processTime));}
+\DoxyCodeLine{00057\ \}}
+
+\end{DoxyCode}

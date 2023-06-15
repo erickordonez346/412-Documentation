@@ -1,0 +1,88 @@
+\doxysection{webserver Class Reference}
+\hypertarget{classwebserver}{}\label{classwebserver}\index{webserver@{webserver}}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{classwebserver_a4d62d90c52a9feff92154fc41c5012ba}\label{classwebserver_a4d62d90c52a9feff92154fc41c5012ba} 
+{\bfseries webserver} (string name)
+\item 
+void \mbox{\hyperlink{classwebserver_aa2a700da8b23bcb1c0498ca61fe884c6}{add\+Request}} (\mbox{\hyperlink{structrequest}{request}} req, int current\+Time)
+\begin{DoxyCompactList}\small\item\em This function adds a request to the server. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{structrequest}{request}} \mbox{\hyperlink{classwebserver_a8e97c299c64c0f9f46052a88888c7fc9}{get\+Request}} ()
+\begin{DoxyCompactList}\small\item\em Returns the request of the server. \end{DoxyCompactList}\item 
+string \mbox{\hyperlink{classwebserver_a5b2b5e07d0c892b5a11ff76d2d6f8343}{get\+Server\+Name}} ()
+\begin{DoxyCompactList}\small\item\em Returns the name of the server. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classwebserver_ad070fd0d61b6a2cbbdf753b165c29437}{is\+Request\+Finished}} (int current\+Time)
+\begin{DoxyCompactList}\small\item\em Returns true if the request of the server is finished. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classwebserver_aa2a700da8b23bcb1c0498ca61fe884c6}\label{classwebserver_aa2a700da8b23bcb1c0498ca61fe884c6} 
+\index{webserver@{webserver}!addRequest@{addRequest}}
+\index{addRequest@{addRequest}!webserver@{webserver}}
+\doxysubsubsection{\texorpdfstring{addRequest()}{addRequest()}}
+{\footnotesize\ttfamily void webserver\+::add\+Request (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structrequest}{request}}}]{req,  }\item[{int}]{current\+Time }\end{DoxyParamCaption})}
+
+
+
+This function adds a request to the server. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em req} & Request object to be added to server \\
+\hline
+{\em current\+Time} & The current time of the system \\
+\hline
+\end{DoxyParams}
+\Hypertarget{classwebserver_a8e97c299c64c0f9f46052a88888c7fc9}\label{classwebserver_a8e97c299c64c0f9f46052a88888c7fc9} 
+\index{webserver@{webserver}!getRequest@{getRequest}}
+\index{getRequest@{getRequest}!webserver@{webserver}}
+\doxysubsubsection{\texorpdfstring{getRequest()}{getRequest()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structrequest}{request}} webserver\+::get\+Request (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Returns the request of the server. 
+
+\begin{DoxyReturn}{Returns}
+request 
+\end{DoxyReturn}
+\Hypertarget{classwebserver_a5b2b5e07d0c892b5a11ff76d2d6f8343}\label{classwebserver_a5b2b5e07d0c892b5a11ff76d2d6f8343} 
+\index{webserver@{webserver}!getServerName@{getServerName}}
+\index{getServerName@{getServerName}!webserver@{webserver}}
+\doxysubsubsection{\texorpdfstring{getServerName()}{getServerName()}}
+{\footnotesize\ttfamily string webserver\+::get\+Server\+Name (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Returns the name of the server. 
+
+\begin{DoxyReturn}{Returns}
+string 
+\end{DoxyReturn}
+\Hypertarget{classwebserver_ad070fd0d61b6a2cbbdf753b165c29437}\label{classwebserver_ad070fd0d61b6a2cbbdf753b165c29437} 
+\index{webserver@{webserver}!isRequestFinished@{isRequestFinished}}
+\index{isRequestFinished@{isRequestFinished}!webserver@{webserver}}
+\doxysubsubsection{\texorpdfstring{isRequestFinished()}{isRequestFinished()}}
+{\footnotesize\ttfamily bool webserver\+::is\+Request\+Finished (\begin{DoxyParamCaption}\item[{int}]{current\+Time }\end{DoxyParamCaption})}
+
+
+
+Returns true if the request of the server is finished. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em current\+Time} & Current time of the system \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true If Request is finished 
+
+false Request is not finished 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+/\+Users/erickordonez/\+Downloads/412-\/\+Project2/\+CSCE412-\/\+Project2/\mbox{\hyperlink{webserver_8h}{webserver.\+h}}\item 
+/\+Users/erickordonez/\+Downloads/412-\/\+Project2/\+CSCE412-\/\+Project2/\mbox{\hyperlink{webserver_8cpp}{webserver.\+cpp}}\end{DoxyCompactItemize}

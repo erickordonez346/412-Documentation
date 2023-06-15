@@ -1,0 +1,41 @@
+\doxysection{webserver.\+h}
+\hypertarget{webserver_8h_source}{}\label{webserver_8h_source}\index{/Users/erickordonez/Downloads/412-\/Project2/CSCE412-\/Project2/webserver.h@{/Users/erickordonez/Downloads/412-\/Project2/CSCE412-\/Project2/webserver.h}}
+\mbox{\hyperlink{webserver_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ }
+\DoxyCodeLine{00011\ \textcolor{preprocessor}{\#ifndef\ REQUEST\_CPP}}
+\DoxyCodeLine{00012\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{request_8cpp}{request.cpp}}"{}}}
+\DoxyCodeLine{00013\ \textcolor{preprocessor}{\#endif}}
+\DoxyCodeLine{00014\ }
+\DoxyCodeLine{00015\ \textcolor{preprocessor}{\#define\ WEBSERVER\_H}}
+\DoxyCodeLine{00016\ }
+\DoxyCodeLine{00017\ \textcolor{keyword}{class\ }\mbox{\hyperlink{classwebserver}{webserver}}\ \{}
+\DoxyCodeLine{00018\ }
+\DoxyCodeLine{00019\ \ \ \ \ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00020\ }
+\DoxyCodeLine{00021\ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ Server\ constructor}}
+\DoxyCodeLine{00022\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classwebserver}{webserver}}()\{}
+\DoxyCodeLine{00023\ \ \ \ \ \ \ \ \ \ \ \ \ requestStartTime\ =\ 0;}
+\DoxyCodeLine{00024\ \ \ \ \ \ \ \ \ \ \ \ \ servername\ =\ \textcolor{stringliteral}{"{}"{}};}
+\DoxyCodeLine{00025\ \ \ \ \ \ \ \ \ \};}
+\DoxyCodeLine{00026\ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ Constructor\ with\ name\ passed\ in}}
+\DoxyCodeLine{00027\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classwebserver}{webserver}}(\textcolor{keywordtype}{string}\ name)\{}
+\DoxyCodeLine{00028\ \ \ \ \ \ \ \ \ \ \ \ \ requestStartTime\ =\ 0;}
+\DoxyCodeLine{00029\ \ \ \ \ \ \ \ \ \ \ \ \ servername\ =\ name;}
+\DoxyCodeLine{00030\ \ \ \ \ \ \ \ \ \};}
+\DoxyCodeLine{00031\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classwebserver_aa2a700da8b23bcb1c0498ca61fe884c6}{addRequest}}(\mbox{\hyperlink{structrequest}{request}}\ req,\ \textcolor{keywordtype}{int}\ currentTime);}
+\DoxyCodeLine{00032\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{structrequest}{request}}\ \mbox{\hyperlink{classwebserver_a8e97c299c64c0f9f46052a88888c7fc9}{getRequest}}();}
+\DoxyCodeLine{00033\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{string}\ \mbox{\hyperlink{classwebserver_a5b2b5e07d0c892b5a11ff76d2d6f8343}{getServerName}}();}
+\DoxyCodeLine{00034\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{classwebserver_ad070fd0d61b6a2cbbdf753b165c29437}{isRequestFinished}}(\textcolor{keywordtype}{int}\ currentTime);}
+\DoxyCodeLine{00035\ }
+\DoxyCodeLine{00036\ \ \ \ \ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00037\ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ Server\ request}}
+\DoxyCodeLine{00038\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{structrequest}{request}}\ r;}
+\DoxyCodeLine{00039\ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ Start\ time\ for\ the\ request}}
+\DoxyCodeLine{00040\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{int}\ requestStartTime;}
+\DoxyCodeLine{00041\ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ Name\ of\ server}}
+\DoxyCodeLine{00042\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{string}\ servername;}
+\DoxyCodeLine{00043\ }
+\DoxyCodeLine{00044\ \};}
+
+\end{DoxyCode}

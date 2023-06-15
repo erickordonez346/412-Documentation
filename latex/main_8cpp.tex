@@ -1,0 +1,89 @@
+\doxysection{/\+Users/erickordonez/\+Downloads/412-\/\+Project2/\+CSCE412-\/\+Project2/main.cpp File Reference}
+\hypertarget{main_8cpp}{}\label{main_8cpp}\index{/Users/erickordonez/Downloads/412-\/Project2/CSCE412-\/Project2/main.cpp@{/Users/erickordonez/Downloads/412-\/Project2/CSCE412-\/Project2/main.cpp}}
+
+
+This is the main driver file.  
+
+
+{\ttfamily \#include \"{}webserver.\+h\"{}}\newline
+{\ttfamily \#include \"{}loadbalancer.\+h\"{}}\newline
+{\ttfamily \#include \"{}loadbalancer.\+cpp\"{}}\newline
+{\ttfamily \#include \"{}webserver.\+cpp\"{}}\newline
+{\ttfamily \#include $<$iostream$>$}\newline
+{\ttfamily \#include $<$cstdlib$>$}\newline
+{\ttfamily \#include $<$sstream$>$}\newline
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{structrequest}{request}} \mbox{\hyperlink{main_8cpp_ab0324c748c79a12301c5fd8525caaab4}{create\+Random\+Request}} ()
+\begin{DoxyCompactList}\small\item\em Create a Random Request object. \end{DoxyCompactList}\item 
+string \mbox{\hyperlink{main_8cpp_a369aba6146590f29c033ee1808ca3124}{random\+Server\+Name}} ()
+\begin{DoxyCompactList}\small\item\em Generates a random 3 letter name for a server and return the result in the form of a string. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{main_8cpp_ae66f6b31b5ad750f1fe042a706a4e3d4}{main}} ()
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+This is the main driver file. 
+
+\begin{DoxyAuthor}{Author}
+Erick Ordonez 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+0.\+1 
+\end{DoxyVersion}
+\begin{DoxyDate}{Date}
+2023-\/06-\/14
+\end{DoxyDate}
+\begin{DoxyCopyright}{Copyright}
+Copyright (c) 2023 
+\end{DoxyCopyright}
+
+
+\doxysubsection{Function Documentation}
+\Hypertarget{main_8cpp_ab0324c748c79a12301c5fd8525caaab4}\label{main_8cpp_ab0324c748c79a12301c5fd8525caaab4} 
+\index{main.cpp@{main.cpp}!createRandomRequest@{createRandomRequest}}
+\index{createRandomRequest@{createRandomRequest}!main.cpp@{main.cpp}}
+\doxysubsubsection{\texorpdfstring{createRandomRequest()}{createRandomRequest()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structrequest}{request}} create\+Random\+Request (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Create a Random Request object. 
+
+\begin{DoxyReturn}{Returns}
+request 
+\end{DoxyReturn}
+\Hypertarget{main_8cpp_ae66f6b31b5ad750f1fe042a706a4e3d4}\label{main_8cpp_ae66f6b31b5ad750f1fe042a706a4e3d4} 
+\index{main.cpp@{main.cpp}!main@{main}}
+\index{main@{main}!main.cpp@{main.cpp}}
+\doxysubsubsection{\texorpdfstring{main()}{main()}}
+{\footnotesize\ttfamily int main (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Number of servers from user input
+
+Total runtime from user input
+
+Our loadbalancer for the main driver
+
+Arrray to contain servers
+
+Array to contain processed time for each server
+
+Current time of the system
+
+Request from server
+
+Random generated request\Hypertarget{main_8cpp_a369aba6146590f29c033ee1808ca3124}\label{main_8cpp_a369aba6146590f29c033ee1808ca3124} 
+\index{main.cpp@{main.cpp}!randomServerName@{randomServerName}}
+\index{randomServerName@{randomServerName}!main.cpp@{main.cpp}}
+\doxysubsubsection{\texorpdfstring{randomServerName()}{randomServerName()}}
+{\footnotesize\ttfamily string random\+Server\+Name (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Generates a random 3 letter name for a server and return the result in the form of a string. 
+
+\begin{DoxyReturn}{Returns}
+string 
+\end{DoxyReturn}
